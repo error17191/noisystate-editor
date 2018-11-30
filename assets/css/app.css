@@ -1,0 +1,7 @@
+#addLinkModal .form-control{
+    margin-bottom: 0;
+}
+
+#addLinkModal .form-group.has-error .form-control{
+    border-color: #a94442;
+}
