@@ -5,3 +5,14 @@
 #addLinkModal .form-group.has-error .form-control{
     border-color: #a94442;
 }
+
+.project{
+    position: relative;
+}
+.project .edit_photo{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 3;
+    display: block;
+}

@@ -31,7 +31,18 @@ $.contextMenu({
     }
 });
 
-dragula([document.querySelector('.navbar-links')]);
+window.drake1 = dragula([document.querySelector('.navbar-links')]);
+$(document.querySelectorAll('.navbar-links .dropdown .dropdown-menu')).each(function () {
+    dragula([this]);
+});
+
+$(".dropdown").on("show.bs.dropdown", function(event){
+    window.drake1.destroy();
+});
+
+$(".dropdown").on("hide.bs.dropdown", function(event){
+    window.drake1 = dragula([document.querySelector('.navbar-links')]);
+});
 
 
 function addLink(){
